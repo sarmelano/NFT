@@ -57,6 +57,10 @@ body {
     font-size: 16px;
 }
 
+.m0 {
+    margin: 0;
+}
+
 /**
    * Render the `main` element consistently in IE.
    */
