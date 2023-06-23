@@ -83,11 +83,11 @@ body {
 
 /*===</HEADER>===*/
 
-.splash {
+.main {
   padding: 0 15px;
 }
 
-.main {
+.splash {
   display: flex;
   justify-content: space-between;
   align-items: center;
