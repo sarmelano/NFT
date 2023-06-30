@@ -1,4 +1,7 @@
 :root {
+  --bc-main: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%) no-repeat;
   --color-white: white;
   --bc-purple: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  --bc-half-white: rgba(255, 255, 255, 0.5);
+  --bc-grey: rgba(255, 255, 255, 0.1);
 }

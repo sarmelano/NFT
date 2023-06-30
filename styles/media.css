@@ -1,0 +1,66 @@
+@media screen and (max-width:1130px) {
+
+  .container1197 {
+    max-width: 940px;
+  }
+
+  .header__list {
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .search-form__input {
+    width: 260px;
+    font-size: 14px;
+    padding: 10px 13px 10px 40px;
+  }
+
+  .main__text {
+    flex-basis: 450px;
+  }
+
+  .main__image {
+    flex-basis: calc(100% - 450px - 30px);
+  }
+
+  .main__title {
+    font-size: 43px;
+  }
+
+  .main__subtitle,
+  .main__btn,
+  .main__item,
+  .article__subtitle,
+  .card__link,
+  .collapsible {
+    font-size: 18px;
+  }
+
+  .main__list {
+    gap: 40px;
+  }
+
+  .main__item_span {
+    font-size: 26px;
+  }
+
+  .article__title {
+    font-size: 36px;
+  }
+
+  .card__img-wrapper,
+  .card__img {
+    height: 300px;
+  }
+
+  .card__nick,
+  .card__author,
+  .card__price {
+    font-size: 16px;
+  }
+
+  .card__info {
+    gap: 20px;
+  }
+
+}
