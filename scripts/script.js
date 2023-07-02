@@ -12,3 +12,20 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+
+const input1 = document.getElementById("username");
+const input2 = document.getElementById("password");
+
+const inputValues = {};
+
+input1.addEventListener("blur", function(event) {
+  inputValues.username = event.target.value;
+});
+
+input2.addEventListener("blur", function(event) {
+  inputValues.password = event.target.value;
+});
+
+//example
+console.log(inputValues);

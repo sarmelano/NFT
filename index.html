@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NFT</title>
+    <title>NFT Donets Art</title>
 
     <link rel="stylesheet" href="../nft/styles/normalize.css">
     <link rel="stylesheet" href="../nft/styles/common.css">
@@ -17,68 +17,130 @@
 
 <body>
     <!--<HEADER>-->
+
     <header class="header container1197">
 
         <a href="#" class="header__logo a"></a>
 
         <form class="search-form">
-
             <button class="search-form__button"></button>
             <input class="search-form__input" type="search" placeholder="Search items and collections">
-
         </form>
 
-        <nav class="header__nav">
-
+        <nav>
             <ul class="header__list ul">
-                <li class="header__item"><a href="#" class="header__link a">Collections</a></li>
-                <li class="header__item"><a href="#" class="header__link a">Feature</a></li>
-                <li class="header__item"><a href="#" class="header__link a">FAQ</a></li>
-                <li class="header__item"><a href="#" class="header__link a header__link-gradient">Select Wallet</a></li>
+                <li><a href="#" class="header__link a">Collections</a></li>
+                <li><a href="#" class="header__link a">Feature</a></li>
+                <li><a href="#" class="header__link a">FAQ</a></li>
+                <li><a href="#" class="header__link a btn_hovered header__link-gradient">Select
+                        Wallet</a></li>
             </ul>
-
         </nav>
 
     </header>
+
     <!--</HEADER>-->
+
     <!--container for the entire structure holding all other sections-->
     <div class="container1197">
 
+        <!--</MAIN>-->
         <main class="main">
 
-            <section class="splash">
-                <!--wrapper1-->
-                <div class="main__text">
+            <section class="main__splash">
+                <!--<wrapper1>-->
+                <div class="main__text-block">
 
-                    <h1 class="main__title m0">Create, Find & Collect Your Own Creative NFT</h1>
+                    <h1 class="main__text-block_title m0">Create, Find & Collect Your Own Creative NFT</h1>
 
-                    <p class="main__subtitle m0">Donets Art. company give you the opportunity to take a look at finding
-                        your best NFT for FREE.</p>
+                    <p class="main__text-block_subtitle m0">Donets Art. company give you the opportunity to take a look
+                        at finding
+                        your best NFT for FREE.
+                    </p>
 
-                    <a href="#" class="a main__btn main__btn-gradient">Explore Now</a>
-                    <a href="#" class="a main__btn">Random NFT</a>
+                    <a href="#" class="a main__btn btn_hovered main__btn-gradient">Explore Now</a>
+                    <a href="#" class="a main__btn btn_hovered">Random NFT</a>
 
                     <ul class="ul main__list">
-                        <li class="main__item"><span class="main__item_span">37k+</span>Artworks</li>
-                        <li class="main__item"><span class="main__item_span">20k+</span>Artists</li>
-                        <li class="main__item"><span class="main__item_span">99k+</span>Aucations</li>
+                        <li class="main__list-item"><span class="main__list-item_span">37k+</span>Artworks</li>
+                        <li class="main__list-item"><span class="main__list-item_span">20k+</span>Artists</li>
+                        <li class="main__list-item"><span class="main__list-item_span">99k+</span>Aucations</li>
                     </ul>
 
                 </div>
-                <!--wrapper2-->
-                <div class="main__image">
-                    <img class="main__img responsive" src="../nft/images/main.webp" alt="Gallery">
-                </div>
+                <!--</wrapper1>-->
 
+                <!--<wrapper2>-->
+                <div class="main__image-block">
+                    <img class="responsive" src="../nft/images/main.webp" alt="Gallery">
+                </div>
+                <!--</wrapper1=2>-->
             </section>
-            <!--logos for partners animated-->
-            <div class="partners">
-                <img class=" partners__img" src="../nft/images/partners/ivan_white.svg" width="20%" alt="">
-                <img class=" partners__img" src="../nft/images/partners/meri_white.svg" width="25%" alt="">
-                <img class=" partners__img" src="../nft/images/partners/dmytro_white.svg" width="20%" alt="">
+
+            <!--<INTERACTION>-->
+            <div class="interaction">
+                <!--quote-block-->
+                <div class="interaction-block__quote">
+
+                    <div class="i-block__quote__img-wrapper">
+                        <img class="i-block__quote__img responsive" src="../nft/images/self.avif"
+                            alt="General director of Donets Art. picture" width="215">
+                    </div>
+
+                    <div class="i-block__quote__q-wrapper">
+
+                        <p class="i-block_quote">
+                            <q>Creativity means taking already known elements and combining them in a unique way.</q>
+                        </p>
+
+                        <div class="i-block__quote__signature_wrapper">
+
+                            <img class="responsive" src="../nft/images/gen_dir.svg" alt="D. Donets" width="70">
+                            <span class="i-block__quote__signature">General director</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!---->
+                <!--login block-->
+                <div class="interaction-block__login">
+
+                    <h3 class="i-block__login_title">Get ready to look at our NFT</h3>
+
+                    <form class="i-block__login_form" method="" action="#">
+
+                        <label class="i-block__login_form_label" for="username">Login:</label>
+                        <input class="i-block__login_form_input" type="text" id="username" name="username"
+                            placeholder="Username or Email">
+
+                        <label class="i-block__login_form_label" for="password">Password:</label>
+                        <input class="i-block__login_form_input" type="password" id="password" name="password"
+                            placeholder="Password">
+
+                        <label class="control control-checkbox">
+                            Remember me
+                            <input type="checkbox" checked="checked" />
+                            <div class="control_indicator"></div>
+                        </label>
+
+                        <div class="i-block__login_btn">
+                            <button class="i-block__login_link" type="submit" value="Войти">Sign in</button>
+                            <button class="i-block__login_link" type="submit" value="Войти">Create</button>
+                        </div>
+
+                    </form>
+
+                </div>
             </div>
+            <!---->
+            <!--</INTERACTION>-->
 
         </main>
+        <!--</MAIN>-->
+
+        <!--<ARTICLE-CARDS>-->
 
         <article class="article-featured">
 
@@ -154,6 +216,10 @@
             </div>
         </article>
 
+        <!--</ARTICLE-CARDS>-->
+
+        <!--<ARTICLE-FAQ>-->
+
         <article class="article-question">
 
             <h2 class="article__title h2">Freaquently Asked Question</h2>
@@ -211,72 +277,21 @@
 
         </article>
 
-
-
-
-
-        <div class="test">
-
-            <div class="home-team_carusel">
-                <div class="gen-dir_wrapper">
-
-                    <img class="gen-dir_pic responsive" src="../nft/images/self.avif"
-                        alt="General director of Hlegal picture" width="215">
-                </div>
-                <div class="home-team_wrapper">
-
-                    <p class="gen-dir_quote">
-                        <q>Creativity means taking already known elements and combining them in a unique way.</q>
-                    </p>
-
-                    <div class="signature_wrapper">
-
-                        <img class="responsive" src="../nft/images/gen_dir.svg" alt="D. Donets" width="70">
-                        <span class="signature">General director</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="banner">
-                <h3 class="banner__title">Get ready to look at our NFT</h3>
-
-                <form class="banner__form" method="" action="#">
-
-                    <label class="banner__form_label" for="username">Login:</label>
-                    <input class="banner__form_input" type="text" id="username" name="username"
-                        placeholder="Username or Email">
-
-                    <label class="banner__form_label" for="password">Password:</label>
-                    <input class="banner__form_input" type="password" id="password" name="password"
-                        placeholder="Password">
-
-
-                     
-                        <label class="control control-checkbox">
-                            Remember me
-                                <input type="checkbox" checked="checked" />
-                            <div class="control_indicator"></div>
-                        </label>
-
-                    
-                    <div class="banner__form_btn">
-                        <button class="banner__link" type="submit" value="Войти">Sign in</button>
-                        <button class="banner__link" type="submit" value="Войти">Create</button>
-                    </div>
-                </form>
-
-
-                <!-- 
-                <a href="#" class="a banner__link">Started</a>
-                <a href="#" class="a banner__link">Sign in</a> -->
-            </div>
-
-        </div>
+        <!--</ARTICLE-FAQ>-->
 
     </div>
+
+    <!--/container for the entire structure holding all other sections-->
+
+    <!--<FOOTER>-->
+
+    <footer class="container1197 partners">
+        <img class=" partners__img" src="../nft/images/partners/ivan_white.svg" width="20%" alt="Donets Ivan">
+        <img class=" partners__img" src="../nft/images/partners/meri_white.svg" width="25%" alt="Hovhannisyan Meri">
+        <img class=" partners__img" src="../nft/images/partners/dmytro_white.svg" width="20%" alt="Donets Dmytro">
+    </footer>
+
+    <!--</FOOTER>-->
 
     <script src="../nft/scripts/script.js"></script>
 
