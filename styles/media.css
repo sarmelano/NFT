@@ -61,4 +61,13 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
   html {
     font-size: 13px;
   }
+
+  .header__mobile_nav {
+    display: block;
+  }
+
+  .search-form,
+  .header__desktop_nav {
+    display: none;
+  } 
 }

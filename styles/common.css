@@ -107,6 +107,24 @@ body {
   padding: 10px 20px;
 }
 
+.header__mobile_nav {
+  display: none;
+  padding-top: 5px;
+}
+
+.header__search {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/search.svg);
+}
+
+.header__burger {
+  width: 27px;
+  height: 20px;
+  background-image: url(../images/burger.svg);
+  margin-left: 22px;
+}
+
 /*===</HEADER>===*/
 /*===<MAIN>===*/
 .main {
