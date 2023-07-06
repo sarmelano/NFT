@@ -1,67 +1,64 @@
-/* @media screen and (max-width:1130px) {
-
+/*<extra-large screens>*/
+@media screen and (min-width:1500px) and (max-width:4000px) {
   .container1197 {
-    max-width: 940px;
+    max-width: calc(100vw - 300px);
   }
 
-  .header__list {
-    gap: 20px;
-    font-size: 16px;
+  .main__image-block {
+    flex-basis: auto;
   }
 
-  .search-form__input {
-    width: 260px;
-    font-size: 14px;
-    padding: 10px 13px 10px 40px;
+  .interaction {
+    column-gap: calc(11.81vw + 4vw);
+  }
+}
+
+@media screen and (min-width:2800px) and (max-width:4000px) {
+  .container1197 {
+    max-width: calc(100vw - 18%);
   }
 
-  .main__text {
-    flex-basis: 450px;
+  .interaction {
+    column-gap: calc(11.81vw + 10vw);
   }
+}
 
-  .main__image {
-    flex-basis: calc(100% - 450px - 30px);
-  }
+/*</extra-large screens>*/
 
-  .main__title {
-    font-size: 43px;
-  }
-
-  .main__subtitle,
-  .main__btn,
-  .main__item,
-  .article__subtitle,
-  .card__link,
-  .collapsible {
-    font-size: 18px;
-  }
-
-  .main__list {
-    gap: 40px;
-  }
-
-  .main__item_span {
-    font-size: 26px;
-  }
-
-  .article__title {
+/*<extra-large screens + dependence on HiDPI availability>*/
+@media only screen and (min-width: 1440px) and (max-width: 4000px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 1440px) and (max-width: 4000px) and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution: 1.5dppx) {
+  html {
     font-size: 36px;
   }
+}
 
-  .card__img-wrapper,
-  .card__img {
-    height: 300px;
+@media only screen and (min-width: 1440px) and (max-width: 4000px) and (-webkit-min-device-pixel-ratio: 1),
+only screen and (min-width: 1440px) and (max-width: 4000px) and (min--moz-device-pixel-ratio: 1),
+only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution: 96dpi) {
+  html {
+    font-size: 18px;
   }
+}
 
-  .card__nick,
-  .card__author,
-  .card__price {
-    font-size: 16px;
+/*</extra-large screens + dependence on HiDPI availability>*/
+
+/*regular sizes==================================================*/
+@media screen and (max-width:1240px) {
+  html {
+    font-size: 15px;
   }
+}
 
-  .card__info {
-    gap: 20px;
+@media screen and (max-width:1024px) {
+  html {
+    font-size: 14px;
   }
+}
 
-} */
-
+@media screen and (max-width:992px) {
+  html {
+    font-size: 13px;
+  }
+}

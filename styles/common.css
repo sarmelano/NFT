@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500;700&display=swap');
 
 /*===GLOBAL===*/
-body {
+
+*,
+*::before,
+*::after {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+}
+
+body {
   background: var(--bc-main);
   color: var(--color-white);
   padding: 0 15px;
 }
+/*===/GLOBAL===*/
 
-/*===GLOBAL===*/
 /*===<HEADER>===*/
 .container1197 {
   max-width: 1197px;
@@ -23,7 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 10%;
 }
 
 .header__logo {
@@ -50,25 +56,45 @@ body {
   /*center = 50% - 1/2 width or 1/2 height*/
   top: calc(50% - 10px);
   left: 10px;
+  cursor: pointer;
 }
 
 .search-form__input {
-  width: 384px;
-  font-size: 1.25em;
-  line-height: 30px;
+  width: 26.6667vw;
+  font-size: 1.25rem;
+  line-height: var(--lh-medium);
   background-color: var(--bc-grey);
   border-radius: 10px;
-  padding: 10px 50px 10px 40px;
+  padding: 10px 40px;
   border: none;
   outline: none;
   color: var(--color-white);
 }
 
+.search-form__input::-webkit-search-cancel-button {
+  position: absolute;
+  right: 12px;
+}
+
+.search-form__input::-moz-search-cancel {
+  position: absolute;
+  right: 12px;
+}
+
+.search-form__input::-ms-clear {
+  position: absolute;
+  right: 12px;
+}
+
 .header__list {
   display: flex;
-  gap: 40px;
-  font-size: 1.25em;
-  line-height: 30px;
+  gap: 2.3455vw;
+  font-size: 1.25rem;
+  line-height: var(--lh-medium);
+}
+
+.header__list li {
+  cursor: pointer;
 }
 
 .header__link {
@@ -84,37 +110,40 @@ body {
 /*===</HEADER>===*/
 /*===<MAIN>===*/
 .main {
-  margin-bottom: 200px;
+  margin-bottom: 25%;
 }
 
 .main__splash {
   display: flex;
   justify-content: space-between;
+  column-gap: 8.06vw;
   align-items: center;
-  margin-bottom: 235px;
+  margin-bottom: 25%;
 }
 
 /*=====================*/
 /*size of this block is more priority*/
 .main__text-block {
-  flex-basis: 490px;
+  flex-basis: 34.03vw;
 }
+
 
 /*size less priority*/
 .main__image-block {
-  flex-basis: calc(100% - 490px - 116px);
+  flex-basis: calc(100% - 34.03vw - 8.06vw);
+  padding-bottom: 100px;
 }
 
 /*=====================*/
 .main__text-block_title {
   font-weight: 700;
-  font-size: 3.125em;
+  font-size: 3.125rem;
   line-height: 120%;
   margin-bottom: 10px;
 }
 
 .main__text-block_subtitle {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 180%;
   color: var(--bc-half-white);
   margin-bottom: 30px;
@@ -122,8 +151,8 @@ body {
 
 .main__btn {
   display: inline-block;
-  font-size: 1.25em;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: var(--lh-medium);
   border-radius: 10px;
   color: var(--bc-half-white);
   background-color: var(--bc-grey);
@@ -144,12 +173,12 @@ body {
 .main__list {
   display: flex;
   text-align: center;
-  gap: 110px;
+  gap: 7.64vw;
 }
 
 .main__list-item {
-  font-size: 1.25em;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: var(--lh-medium);
   color: var(--bc-half-white);
 
 }
@@ -157,8 +186,8 @@ body {
 .main__list-item_span {
   display: block;
   font-weight: 700;
-  font-size: 1.875em;
-  line-height: 45px;
+  font-size: var(--lh-medium);
+  line-height: 2.8125rem;
   color: var(--color-white);
 
 }
@@ -167,7 +196,7 @@ body {
 .interaction {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 170px;
+  column-gap: 11.81vw;
 }
 
 .interaction-block__quote {
@@ -177,7 +206,7 @@ body {
   box-shadow: -2px -2px 62px 22px rgba(227, 123, 178, 0.7);
   background-color: var(--bc-grey);
   border-radius: 12px;
-  padding: 30px 34px;
+  padding: 2.08vw;
 }
 
 .i-block__quote__img-wrapper {
@@ -213,7 +242,7 @@ body {
 .i-block__quote__signature {
   color: #aabde6;
   font-size: 0.6875rem;
-  line-height: 22px;
+  line-height: 1.375rem;
 }
 
 .interaction-block__login {
@@ -226,18 +255,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 34px;
+  padding: 1.58vw;
 }
 
 .i-block__login_title {
   max-width: 500px;
   font-weight: 700;
   font-size: 2.3rem;
-  line-height: 50px;
+  line-height: 3.125rem;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 14px;
   background: linear-gradient(to right, #a3d966 10%, #ffffff 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -250,12 +280,12 @@ body {
 }
 
 .i-block__login_form_label {
-  font-size: 19px;
+  font-size: 1.1875rem;
 }
 
 .i-block__login_form_input {
-  font-size: 0.9em;
-  line-height: 30px;
+  font-size: 0.9rem;
+  line-height: var(--lh-medium);
   background-color: var(--bc-grey);
   border-radius: 10px;
   padding: 10px 20px 10px 20px;
@@ -276,11 +306,18 @@ body {
 
 .control {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: baseline;
   padding-left: 30px;
   padding-top: 8px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
+
+
+
+/*разберисб с галочкой запомнить меня*/
 
 .control-checkbox .control_indicator:after {
   left: 8px;
@@ -352,14 +389,15 @@ body {
 
 .control_indicator {
   position: absolute;
-  top: 2px;
+  vertical-align: middle;
+  /* top: 2px; */
   left: 0;
   height: 20px;
   width: 20px;
   background: #e6e6e6;
   border: 0px solid #000000;
   border-radius: 5px;
-  transform: translateY(50%);
+  /* transform: translateY(50%); */
 }
 
 .i-block__login_btn {
@@ -372,9 +410,9 @@ body {
   background: var(--bc-half-white);
   border: none;
   border-radius: 10px;
-  font-size: 1.25em;
-  line-height: 30px;
-  padding: 10px 20px;
+  font-size: 1.25rem;
+  line-height: var(--lh-medium);
+  padding: 0.69vw 1.38vw;
   color: var(--color-white);
 }
 
@@ -392,7 +430,7 @@ body {
 /*===<ARTICLE-FEATURED>===*/
 
 .article-featured {
-  margin-bottom: 230px;
+  margin-bottom: 20%;
 }
 
 .article-desc {
@@ -403,16 +441,16 @@ body {
 
 .article__title {
   font-weight: 700;
-  font-size: 2.5em;
-  line-height: 60px;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
   text-align: center;
   color: var(--color-white);
   margin-bottom: 10px;
 }
 
 .article__subtitle {
-  font-size: 1.25em;
-  line-height: 1.875rem;
+  font-size: 1.25rem;
+  line-height: var(--lh-medium);
   text-align: center;
   color: var(--bc-half-white);
 }
@@ -426,7 +464,7 @@ body {
   background-color: var(--bc-grey);
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  padding: 26px;
+  padding: 1.807vw;
   flex-basis: calc(100% / 3 - 15px);
   /*while hover*/
   transition: 300ms;
@@ -441,17 +479,17 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 380px;
+  height: 0;
+  min-height: 360px;
+  padding-bottom: 56.25%;
 }
 
 .card__img {
-  display: block;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 380px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -463,22 +501,22 @@ body {
 }
 
 .card__nick {
-  font-size: 1.25em;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: var(--lh-medium);
   color: var(--bc-half-white);
 }
 
 .card__author,
 .card__price {
   font-weight: 700;
-  font-size: 1.25em;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: var(--lh-medium);
   color: var(--color-white);
 }
 
 .card__bid {
-  font-size: 0.9375em;
-  line-height: 22px;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
   color: var(--bc-half-white);
   text-align: right;
 }
@@ -492,6 +530,7 @@ body {
   text-align: center;
   background: var(--bc-purple);
   transition: 300ms;
+  margin-bottom: 1%;
 }
 
 .card__link:hover {
@@ -507,7 +546,7 @@ body {
 /*===<ARTICLE-FAQ>===*/
 
 .article-question {
-  margin-bottom: 150px;
+  margin-bottom: 12.86%;
 }
 
 .faq {
@@ -517,7 +556,7 @@ body {
 }
 
 .faq__item {
-  flex-basis: 49%;
+  flex-basis: 47%;
 }
 
 .collapsible {
@@ -531,7 +570,7 @@ body {
   border-bottom: 1px solid white;
   text-align: left;
   outline: none;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 .active,
@@ -555,7 +594,7 @@ body {
 .content {
   max-height: 0;
   overflow: hidden;
-  line-height: 1.5;
+  line-height: 1.5rem;
   transition: max-height 0.2s ease-out;
 }
 
@@ -568,8 +607,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  margin: 100px auto;
-  padding: 0 15px;
+  margin: 7.175% auto;
+  margin-top: 0;
+  padding: 0 1.8vw;
   gap: 10.416%;
 }
 
@@ -579,5 +619,4 @@ body {
   height: auto;
   opacity: 0.7;
 }
-
 /*===</FOOTER>===*/

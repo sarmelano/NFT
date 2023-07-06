@@ -4,4 +4,5 @@
   --bc-purple: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
   --bc-half-white: rgba(255, 255, 255, 0.5);
   --bc-grey: rgba(255, 255, 255, 0.1);
+  --lh-medium: 1.875rem  /*line-height:30px*/
 }
