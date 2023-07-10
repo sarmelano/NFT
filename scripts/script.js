@@ -31,7 +31,6 @@ input2.addEventListener("blur", function(event) {
 console.log(inputValues);
 
 
-
 var left = document.querySelector('.left');
 var right = document.querySelector('.right');
 var viewport = document.querySelector('.viewport');
@@ -47,4 +46,19 @@ right.addEventListener('click', function() {
       left: viewport.scrollLeft + window.innerWidth * 0.51,
       behavior: 'smooth'
    });
+});
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scroll-to-top").style.display = "block";
+  } else {
+    document.getElementById("scroll-to-top").style.display = "none";
+  }
+}
+
+document.getElementById("scroll-to-top").addEventListener("click", function(){
+  window.scrollTo({top: 0, behavior: "smooth"});
 });
