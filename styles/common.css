@@ -15,6 +15,7 @@ body {
   color: var(--color-white);
   padding: 0 15px;
 }
+
 /*===/GLOBAL===*/
 
 /*===<HEADER>===*/
@@ -61,7 +62,7 @@ body {
 
 .search-form__input {
   width: 26.6667vw;
-  font-size: 1.25rem;
+  font-size: var(--fs-small);
   line-height: var(--lh-medium);
   background-color: var(--bc-grey);
   border-radius: 10px;
@@ -89,7 +90,7 @@ body {
 .header__list {
   display: flex;
   gap: 2.3455vw;
-  font-size: 1.25rem;
+  font-size: var(--fs-small);
   line-height: var(--lh-medium);
 }
 
@@ -123,20 +124,21 @@ body {
   height: 20px;
   background-image: url(../images/burger.svg);
   margin-left: 22px;
+  cursor: pointer;
 }
 
 /*===</HEADER>===*/
 /*===<MAIN>===*/
 .main {
-  margin-bottom: 25%;
+  margin-bottom: var(--mb-medium);
 }
 
 .main__splash {
   display: flex;
   justify-content: space-between;
   column-gap: 8.06vw;
-  align-items: center;
-  margin-bottom: 25%;
+  align-items: start;
+  margin-bottom: var(--mb-medium);
 }
 
 /*=====================*/
@@ -149,7 +151,6 @@ body {
 /*size less priority*/
 .main__image-block {
   flex-basis: calc(100% - 34.03vw - 8.06vw);
-  padding-bottom: 100px;
 }
 
 /*=====================*/
@@ -161,27 +162,27 @@ body {
 }
 
 .main__text-block_subtitle {
-  font-size: 1.25rem;
+  font-size: var(--fs-small);
   line-height: 180%;
   color: var(--bc-half-white);
-  margin-bottom: 30px;
+  margin-bottom: 2.0832vw;
 }
 
 .main__btn {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: var(--fs-small);
   line-height: var(--lh-medium);
   border-radius: 10px;
   color: var(--bc-half-white);
   background-color: var(--bc-grey);
   padding: 10px 20px;
   color: var(--color-white);
-  margin-bottom: 40px;
+  margin-bottom: 2.8vw;
 }
 
 .main__btn-gradient {
   background: var(--bc-purple);
-  margin-right: 20px;
+  margin-right: 0.85vw;
 }
 
 .btn_hovered:hover {
@@ -191,11 +192,11 @@ body {
 .main__list {
   display: flex;
   text-align: center;
-  gap: 7.64vw;
+  gap: 7vw;
 }
 
 .main__list-item {
-  font-size: 1.25rem;
+  font-size: var(--fs-small);
   line-height: var(--lh-medium);
   color: var(--bc-half-white);
 
@@ -214,7 +215,7 @@ body {
 .interaction {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 11.81vw;
+  column-gap: 5.81vw;
 }
 
 .interaction-block__quote {
@@ -230,7 +231,7 @@ body {
 .i-block__quote__img-wrapper {
   display: flex;
   place-content: center;
-  margin-bottom: 13px;
+  margin-bottom: 0.902vw;
 }
 
 .i-block__quote__img {
@@ -242,13 +243,13 @@ body {
 .i-block__quote__q-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 22.5px;
+  margin: 0 1.5624vw;
 }
 
 .i-block_quote {
   font-size: 1.4375rem;
   line-height: 2.1875rem;
-  margin: 15px 0 10px 0;
+  margin: 1.041vw 0 0.6944vw 0;
 }
 
 .i-block__quote__signature_wrapper {
@@ -264,16 +265,17 @@ body {
 }
 
 .interaction-block__login {
-  height: 100%;
+  /*  height: 100%; */
   -webkit-box-shadow: -2px -2px 62px 22px rgba(227, 123, 178, 0.7);
   -moz-box-shadow: -2px -2px 62px 22px rgba(227, 123, 178, 0.7);
   box-shadow: -2px -2px 62px 22px rgba(227, 123, 178, 0.7);
   background: var(--bc-purple);
-  border-radius: 10px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 1.58vw;
+  padding: 2.08vw;
 }
 
 .i-block__login_title {
@@ -283,7 +285,7 @@ body {
   line-height: 3.125rem;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 14px;
+  margin-bottom: 0.9721vw;
   background: linear-gradient(to right, #a3d966 10%, #ffffff 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -302,7 +304,7 @@ body {
 }
 
 .i-block__login_form_input {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: var(--lh-medium);
   background-color: var(--bc-grey);
   border-radius: 10px;
@@ -310,6 +312,7 @@ body {
   border: none;
   outline: none;
   color: var(--color-white);
+  margin-bottom: 0.75vw;
 }
 
 .i-block__login_form_input:focus,
@@ -419,7 +422,9 @@ body {
 }
 
 .i-block__login_btn {
-  margin-top: 20px;
+  margin-top: 1.5vw;
+  display: flex;
+  gap: 0.85vw;
 }
 
 .i-block__login_link {
@@ -428,7 +433,7 @@ body {
   background: var(--bc-half-white);
   border: none;
   border-radius: 10px;
-  font-size: 1.25rem;
+  font-size: var(--fs-small);
   line-height: var(--lh-medium);
   padding: 0.69vw 1.38vw;
   color: var(--color-white);
@@ -448,13 +453,13 @@ body {
 /*===<ARTICLE-FEATURED>===*/
 
 .article-featured {
-  margin-bottom: 20%;
+  margin-bottom: var(--mb-medium);
 }
 
 .article-desc {
-  max-width: 495px;
+  max-width: 50%;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 5vw;
 }
 
 .article__title {
@@ -467,22 +472,23 @@ body {
 }
 
 .article__subtitle {
-  font-size: 1.25rem;
+  font-size: var(--fs-small);
   line-height: var(--lh-medium);
   text-align: center;
   color: var(--bc-half-white);
 }
 
 .cards {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2vw;
 }
 
 .card__item {
   background-color: var(--bc-grey);
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  padding: 1.807vw;
+  padding: 1vw;
   flex-basis: calc(100% / 3 - 15px);
   /*while hover*/
   transition: 300ms;
@@ -498,8 +504,7 @@ body {
   overflow: hidden;
   width: 100%;
   height: 0;
-  min-height: 360px;
-  padding-bottom: 56.25%;
+  min-height: 25vw;
 }
 
 .card__img {
@@ -519,7 +524,7 @@ body {
 }
 
 .card__nick {
-  font-size: 1.25rem;
+  font-size: var(--fs-small);
   line-height: var(--lh-medium);
   color: var(--bc-half-white);
 }
@@ -527,7 +532,7 @@ body {
 .card__author,
 .card__price {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: var(--fs-small);
   line-height: var(--lh-medium);
   color: var(--color-white);
 }
@@ -560,6 +565,10 @@ body {
   border: 1.5px solid white;
 }
 
+.cards-scroll-btn {
+  display: none;
+}
+
 /*===</ARTICLE-FEATURED>===*/
 /*===<ARTICLE-FAQ>===*/
 
@@ -570,7 +579,7 @@ body {
 .faq {
   display: flex;
   justify-content: space-between;
-  margin-top: 42px;
+  margin-top: 5%;
 }
 
 .faq__item {
@@ -581,14 +590,14 @@ body {
   background: transparent;
   color: var(--bc-half-white);
   cursor: pointer;
-  padding: 20px 0;
+  padding: 1.388vw 0;
   margin-bottom: 30px;
   width: 100%;
   border: none;
   border-bottom: 1px solid white;
   text-align: left;
   outline: none;
-  font-size: 1.25rem;
+  font-size: var(--fs-small);
 }
 
 .active,
@@ -637,4 +646,5 @@ body {
   height: auto;
   opacity: 0.7;
 }
+
 /*===</FOOTER>===*/

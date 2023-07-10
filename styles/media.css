@@ -47,19 +47,23 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
 /*regular sizes==================================================*/
 @media screen and (max-width:1240px) {
   html {
+    font-size: 16px;
+  }
+}
+
+/*regular sizes==================================================*/
+
+@media screen and (max-width:1024px) {
+  html {
     font-size: 15px;
   }
 }
 
-@media screen and (max-width:1024px) {
-  html {
-    font-size: 14px;
-  }
-}
+/*regular sizes==================================================*/
 
 @media screen and (max-width:992px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .header__mobile_nav {
@@ -69,5 +73,338 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
   .search-form,
   .header__desktop_nav {
     display: none;
-  } 
+  }
+
+  .main__text-block_title {
+    font-size: 2.9rem;
+  }
+}
+
+/*regular sizes==================================================*/
+
+@media screen and (max-width:880px) {
+  .interaction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5.81vw;
+  }
+
+  .main__text-block_title {
+    font-size: 2.5rem;
+  }
+
+  .i-block__login_title {
+    font-size: 2.25rem;
+    margin-bottom: 0;
+  }
+
+  .interaction {
+    gap: 0;
+  }
+
+  .interaction-block__quote {
+    box-shadow: none;
+    border-radius: 12px 0 0 12px;
+  }
+
+  .i-block_quote {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 1.041vw 0 0.6944vw 0;
+  }
+
+  .i-block__quote__img-wrapper {
+    width: 50%;
+    margin: 0 auto 1vw auto;
+  }
+
+  .interaction-block__login {
+    border-radius: 0 12px 12px 0;
+  }
+
+  .article__title {
+    font-size: 2rem;
+  }
+
+  .collapsible {
+    font-size: 1rem;
+  }
+}
+
+/*regular sizes==================================================*/
+
+@media screen and (max-width:768px) {
+  html {
+    font-size: 13px;
+  }
+
+  :root {
+    --mb-medium: 20%;
+  }
+
+  .main__splash {
+    justify-content: center;
+    background: url(../images/main_mobile.webp);
+    background-size: contain;
+    background-position: center;
+  }
+
+  .main__text-block {
+    width: 70vw;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .main__text-block_title {
+    font-size: 2.45rem;
+  }
+
+  .main__image-block {
+    display: none;
+  }
+
+  .main__text-block_subtitle {
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .main__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__list-item {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .interaction {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .interaction-block__quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/*regular sizes==================================================*/
+
+@media screen and (max-width:750px) {
+
+  .card__img-wrapper {
+    min-height: 40vw;
+  }
+
+  .cards-scroll-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .cards-scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .layer {
+    min-height: 25vw;
+    width: 49vw;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .viewport {
+    width: 49vw;
+    height: auto;
+    min-height: 25vw;
+    overflow-x: hidden;
+  }
+
+  .cards {
+    display: flex;
+  }
+
+  .card__item {
+    width: 49vw;
+    flex: 1 0 49vw;
+  }
+
+  .left,
+  .right {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 0;
+    border-radius: 100%;
+  }
+
+  .right {
+    left: unset;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+
+  .l,
+  .r {
+    display: block;
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+}
+
+/*regular sizes==================================================*/
+
+@media screen and (min-width: 578px) and (max-width: 750px) {
+
+  .card__author,
+  .card__price {
+    font-size: 1.5rem;
+    margin: 2.5vw 0 3vw 0;
+  }
+
+  .card__nick,
+  .card__bid {
+    font-size: var(--fs-small);
+    margin-bottom: 0;
+  }
+
+  .main__btn {
+    padding: 4.5% 6%;
+  }
+}
+
+/*regular sizes==================================================*/
+@media screen and (max-width:650px) {
+  .interaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13vw;
+  }
+
+  .interaction-block__quote,
+  .interaction-block__login {
+    width: 70vw;
+    border-radius: 25px;
+  }
+
+  .i-block__login_form {
+    width: 44vw;
+  }
+
+  .i-block__login_title {
+    font-size: 2rem;
+  }
+
+  .i-block__login_btn {
+    margin: 1.5vw 0 1.5vw 0;
+    gap: 1.5vw;
+  }
+
+  .i-block__login_link {
+    border-radius: 8px;
+    padding: 1vw 1.38vw;
+  }
+
+  .article-desc {
+    max-width: 91%;
+  }
+
+  .partners {
+    gap: 5.6%;
+  }
+}
+
+/*regular sizes==================================================*/
+@media screen and (max-width:585px) {
+
+  .faq {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  .faq__item {
+    width: 90%;
+  }
+}
+
+/*regular sizes==================================================*/
+
+@media screen and (max-width:578px) {
+  .main__btn {
+    padding: 2.5% 5%;
+  }
+
+  .article__title {
+    font-size: 1.85rem;
+  }
+
+  .partners {
+    margin: 5.175% auto;
+    padding: 0 0.8vw;
+  }
+}
+
+/*regular sizes==================================================*/
+@media screen and (max-width:480px) {
+
+  .i-block__login_title {
+    font-size: 1.7rem;
+    padding: 0 9vw;
+  }
+
+  .article__title {
+    margin-bottom: 0;
+  }
+
+  .partners__img:hover {
+    cursor: auto;
+    animation: none !important;
+  }
+}
+
+/*regular sizes==================================================*/
+@media screen and (max-width:428px) {
+
+  body {
+    margin: 0;
+  }
+
+  .main__text-block_subtitle,
+  .main__btn {
+    margin-bottom: 7vw;
+  }
+
+  .main__btn:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .main__splash {
+    margin-bottom: 35%;
+  }
+
+  .interaction {
+    gap: 20vw;
+  }
+
+  .i-block__login_form {
+    width: 50vw;
+  }
+
+  .content {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .collapsible {
+    margin-bottom: 15px;
+  }
+
+  .partners {
+    gap: 4%;
+  }
 }

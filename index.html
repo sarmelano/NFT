@@ -22,7 +22,7 @@
 
         <a href="#" class="header__logo a"></a>
 
-        <form class="search-form">
+        <form action="/" method="get" class="search-form">
             <button class="search-form__button" type="button"></button>
             <input class="search-form__input" type="search" placeholder="Search items and collections">
         </form>
@@ -148,77 +148,105 @@
         <!--<ARTICLE-CARDS>-->
 
         <article class="article-featured">
+<!--стрелка наверх
+бургер
+свг доделай на прокруьке-->
+            <button id="scroll-to-top">Наверх</button>
 
             <div class="article-desc">
                 <h2 class="article__title h2">Featured Artworks</h2>
                 <p class="article__subtitle p">Specific methodologies for assembly and design of main works</p>
             </div>
 
-            <div class="cards">
+            <div class="layer">
 
-                <div class="card__item">
+                <div class="viewport">
 
-                    <div class="card__img-wrapper">
-                        <img class="card__img" src="../nft/images/featured/ivan.webp" alt="cylindrical figures">
-                    </div>
+                    <div class="cards">
 
-                    <div class="card__info">
+                        <div class="card__item card-1">
 
-                        <div>
-                            <p class="card__nick">@stenod</p>
-                            <p class="card__author">Yellow Painting</p>
+                            <div class="card__img-wrapper">
+                                <img class="card__img" src="../nft/images/featured/ivan.webp" alt="cylindrical figures">
+                            </div>
+
+                            <div class="card__info">
+
+                                <div>
+                                    <p class="card__nick">@stenod</p>
+                                    <p class="card__author">Yellows</p>
+                                </div>
+
+                                <p class="card__bid">Current Bid<span class="card__price">FREE</span></p>
+
+                            </div>
+                            <!--button-->
+                            <a class="a card__link main__btn" href="#">Show Me</a>
+
                         </div>
 
-                        <p class="card__bid">Current Bid<span class="card__price">FREE</span></p>
+                        <div class="card__item card-2">
 
-                    </div>
-                    <!--button-->
-                    <a class="a card__link main__btn" href="#">Show Me</a>
+                            <div class="card__img-wrapper">
 
-                </div>
+                                <img class="card__img" src="../nft/images/featured/meri.webp"
+                                    alt="a futuristic tower against the sky">
 
-                <div class="card__item">
-                    <div class="card__img-wrapper">
-                        <img class="card__img" src="../nft/images/featured/meri.webp"
-                            alt="a futuristic tower against the sky">
-                    </div>
+                            </div>
 
-                    <div class="card__info">
+                            <div class="card__info">
 
-                        <div>
-                            <p class="card__nick">@merik0</p>
-                            <p class="card__author">Sky stand</p>
+                                <div>
+                                    <p class="card__nick">@merik0</p>
+                                    <p class="card__author">Sky stand</p>
+                                </div>
+
+                                <p class="card__bid">Current Bid<span class="card__price">FREE</span></p>
+
+                            </div>
+                            <!--button-->
+                            <a class="a card__link main__btn" href="#">Show Me</a>
+
                         </div>
 
-                        <p class="card__bid">Current Bid<span class="card__price">FREE</span></p>
+                        <div class="card__item card-3">
 
-                    </div>
-                    <!--button-->
-                    <a class="a card__link main__btn" href="#">Show Me</a>
+                            <div class="card__img-wrapper">
+                                <img class="card__img" src="../nft/images/featured/dima.webp" alt="pearly planets">
+                            </div>
 
-                </div>
+                            <div class="card__info">
 
-                <div class="card__item">
-                    <div class="card__img-wrapper">
-                        <img class="card__img" src="../nft/images/featured/dima.webp" alt="pearly planets">
-                    </div>
+                                <div>
+                                    <p class="card__nick">@sarmelano</p>
+                                    <p class="card__author">Planet space</p>
+                                </div>
 
-                    <div class="card__info">
+                                <p class="card__bid">Current Bid<span class="card__price">FREE</span></p>
 
-                        <div>
-                            <p class="card__nick">@sarmelano</p>
-                            <p class="card__author">Planet space</p>
+                            </div>
+                            <!--button-->
+                            <a class="a card__link main__btn" href="#">Show Me</a>
+
                         </div>
 
-                        <p class="card__bid">Current Bid<span class="card__price">FREE</span></p>
-
                     </div>
-                    <!--button-->
-                    <a class="a card__link main__btn" href="#">Show Me</a>
+
+                    <button class="cards-scroll-btn left"><svg class="l" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z" />
+                        </svg></button>
+                    <button class="cards-scroll-btn right"><svg class="r" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.568 18.005l-1.414-1.415 4.574-4.59-4.574-4.579 1.414-1.416 5.988 5.995-5.988 6.005z" />
+                        </svg></button>
 
                 </div>
 
             </div>
+
         </article>
 
         <!--</ARTICLE-CARDS>-->
@@ -269,7 +297,7 @@
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <button class="collapsible">Is it possible to download the arts ?</button>
+                    <button class="collapsible">How to download the arts ?</button>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco

@@ -29,3 +29,22 @@ input2.addEventListener("blur", function(event) {
 
 //example
 console.log(inputValues);
+
+
+
+var left = document.querySelector('.left');
+var right = document.querySelector('.right');
+var viewport = document.querySelector('.viewport');
+left.addEventListener('click', function() {
+   viewport.scrollTo({
+      left: viewport.scrollLeft - window.innerWidth * 0.51,
+      behavior: 'smooth'
+   });
+});
+
+right.addEventListener('click', function() {
+   viewport.scrollTo({
+      left: viewport.scrollLeft + window.innerWidth * 0.51,
+      behavior: 'smooth'
+   });
+});
