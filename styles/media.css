@@ -473,9 +473,15 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
 }
 
 /*regular sizes==================================================*/
-@media screen and (max-width:400px) {
+@media screen and (max-width:427px) {
   #scroll-to-top {
     width: 15vw;
     height: 15vw;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .menu__box {
+    height: 100%;
   }
 }
