@@ -52,7 +52,7 @@ right.addEventListener('click', function() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("scroll-to-top").style.display = "block";
   } else {
     document.getElementById("scroll-to-top").style.display = "none";
@@ -62,3 +62,16 @@ function scrollFunction() {
 document.getElementById("scroll-to-top").addEventListener("click", function(){
   window.scrollTo({top: 0, behavior: "smooth"});
 });
+
+
+
+
+var searchButton = document.getElementById("search-button");
+var searchForm = document.getElementsByClassName("search-form-mob")[0];
+
+searchButton.addEventListener("click", showSearchForm);
+
+function showSearchForm() {
+  searchButton.style.display = "none"; // hide
+  searchForm.style.display = "block"; // show
+}

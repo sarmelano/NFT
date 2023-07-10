@@ -40,6 +40,7 @@ body {
   background-image: url(../images/default-monochrome-white.svg);
   background-repeat: no-repeat;
 }
+
 /*search form*/
 .search-form {
   position: relative;
@@ -86,7 +87,61 @@ body {
   position: absolute;
   right: 12px;
 }
+
 /*/search-form*/
+/*<search-form mobile>*/
+
+.search-form__input-mob {
+  width: 100%;
+  font-size: var(--fs-small);
+  line-height: var(--lh-medium);
+  background-color: var(--bc-grey);
+  border-radius: 10px;
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  color: var(--color-white);
+}
+
+#search-button {
+  position: relative;
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.search-form__input-mob::-webkit-search-cancel-button {
+  position: absolute;
+  right: 12px;
+}
+
+.search-form__input-mob::-moz-search-cancel {
+  position: absolute;
+  right: 12px;
+}
+
+.search-form__input-mob::-ms-clear {
+  position: absolute;
+  right: 12px;
+}
+
+.search-mob_button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 25px;
+  cursor: pointer;
+}
+
+/*</search-form mobile>*/
 .header__list {
   display: flex;
   gap: 2.3455vw;
@@ -113,7 +168,7 @@ body {
   padding-top: 5px;
 }
 
-.header__search {
+.header__search-mob {
   display: none;
   padding-right: 15vw;
   width: 20px;

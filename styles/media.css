@@ -67,7 +67,7 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
   }
 
   .hamburger-menu,
-  .header__search {
+  .header__search-mob {
     display: block;
     padding-right: 11vw;
   }
@@ -75,6 +75,14 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
   .search-form,
   .header__desktop_nav {
     display: none;
+  }
+
+  .search-form-mob {
+    position: relative;
+    display: block;
+    margin-bottom: 13%;
+    margin-top: -9%;
+    padding: 0 15px
   }
 
   .main__text-block_title {
@@ -149,7 +157,7 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
     --mb-medium: 20%;
   }
 
-  .header__search {
+  .header__search-mob {
     padding-right: 12.5vw;
   }
 
@@ -294,7 +302,7 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
 /*regular sizes==================================================*/
 @media screen and (max-width:650px) {
 
-  .header__search {
+  .header__search-mob {
     padding-right: 15vw;
   }
 
@@ -377,7 +385,7 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
 
 /*regular sizes==================================================*/
 @media screen and (max-width:550px) {
-  .header__search {
+  .header__search-mob {
     padding-right: 17vw;
   }
 }
@@ -413,7 +421,7 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
     margin: 0;
   }
 
-  .header__search {
+  .header__search-mob {
     padding-right: 21vw;
 }
 
@@ -456,3 +464,12 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
     height: 11vw;
   }
 }
+
+
+
+
+
+
+
+
+
