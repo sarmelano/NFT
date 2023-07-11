@@ -32,6 +32,10 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
   html {
     font-size: 36px;
   }
+
+  .i-block__login_btn {
+    gap: 0.35vw;
+  }
 }
 
 @media only screen and (min-width: 1440px) and (max-width: 4000px) and (-webkit-min-device-pixel-ratio: 1),
@@ -39,6 +43,10 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min--moz-device
 only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution: 96dpi) {
   html {
     font-size: 18px;
+  }
+
+  .i-block__login_btn {
+    gap: 0.35vw;
   }
 }
 
