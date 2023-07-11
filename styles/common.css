@@ -830,20 +830,3 @@ body {
   transform: translate(-50%, -50%);
 }
 /*===</SCROLL>===*/
-
-.hello_body {
-  background-color: var(--bc-main);
-  padding: 0;
-  margin: 0;
-}
-
-.hello {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 10vw;
-  color: white;
-}
