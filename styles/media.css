@@ -467,16 +467,16 @@ only screen and (min-width: 1440px) and (max-width: 4000px) and (min-resolution:
   }
 
   #scroll-to-top {
-    width: 13vw;
-    height: 13vw;
+    width: 14vw;
+    height: 14vw;
   }
 }
 
 /*regular sizes==================================================*/
 @media screen and (max-width:427px) {
   #scroll-to-top {
-    width: 15vw;
-    height: 15vw;
+    width: 16vw;
+    height: 16vw;
   }
 }
 
